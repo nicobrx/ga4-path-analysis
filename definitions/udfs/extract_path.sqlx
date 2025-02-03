@@ -40,8 +40,6 @@ AS """
   var protPos = url.indexOf("//");
   if (protPos >= 0)
     url = url.slice(protPos+2);
-  if (url.match(/linklogistics.com/)) hostname = 'linklogistics.com';
-  else if (url.match(/myworkdayjobs.com/)) hostname = 'myworkdayjobs.com';
   var pathPos = url.indexOf("/");
   if (pathPos < 0)
     return "";

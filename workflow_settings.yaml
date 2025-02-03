@@ -1,5 +1,5 @@
-defaultProject: your_project
+defaultProject: sonida-ga4
 defaultLocation: US
-defaultDataset: dataform
+defaultDataset: ga4_path_analysis_reporting
 defaultAssertionDataset: dataform_assertions
 dataformCoreVersion: 3.0.0
