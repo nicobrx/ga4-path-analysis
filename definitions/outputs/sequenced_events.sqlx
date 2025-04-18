@@ -1,6 +1,7 @@
 config {
     type: "incremental",
     name: "sequenced_events",
+    tags: ["daily"],
     description: `page_views and other events extracted from GA4 export data and organized by session ID and sequence number.`,
     uniqueKey: ["date", "session_id", "seq_num"],
     bigquery: {
@@ -65,7 +66,7 @@ WITH
     -- update the following list if you want to see specific events included in path behavior
     -- contact_us_submission is included here as an example - the event names have to match
     -- event names in your GA4 property
-    AND event_name IN ('page_view','contact_us_submission')
+    AND event_name IN ('page_view','FurtherLead','FurtherPhoneLead')
   ORDER BY session_id, event_timestamp )
 
   -- join sequenced event data and source / medium values

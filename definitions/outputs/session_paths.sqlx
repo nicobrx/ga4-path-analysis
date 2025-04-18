@@ -1,6 +1,7 @@
 config {
   type: "incremental",
   name: "session_paths",
+  tags: ["daily"],
   description: `User path data, organized by session_id. Each row has ten steps 
   - steps are either page views or key events.`,
   uniqueKey: ["date","session_id"],
